@@ -1,0 +1,152 @@
+<!-- Begin Page Content -->
+<div class="container-fluid">
+  <!-- Page Heading -->
+  <h1 class="h3 mb-2 text-gray-800">Products</h1>
+  <!-- <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
+        For more information about DataTables, please visit the <a target="_blank"
+            href="https://datatables.net">official DataTables documentation</a>.</p> -->
+
+  <!-- DataTales Example -->
+  <div class="card shadow mb-4">
+    <div class="card-header py-3">
+      <h6 class="m-0 font-weight-bold text-primary"></h6>
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-bordered" width="100%" cellspacing="0">
+          <!-- id="dataTable" -->
+          <tbody>
+            <form>
+              <div class="mb-3">
+                <label for="productName" class="form-label">Product Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  ng-model="request.tenSanPham"
+                  name="tenSanPham"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="productPrice" class="form-label">Material</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  ng-model="request.chatLieu"
+                  name="chatLieu"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="productDescription" class="form-label">Price</label>
+                <input
+                  class="form-control"
+                  ng-model="request.giaHienHanh"
+                  name="giaHienHanh"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="productImage" class="form-label"
+                  >Quantity in Stock</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  ng-model="request.soLuongTon"
+                  name="soLuongTon"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="productName" class="form-label"
+                  >Product Description</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  ng-model="request.moTa"
+                  name="moTa"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="productPrice" class="form-label">Category</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  ng-model="request.loaiSanPham"
+                  name="loaiSanPham"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="productPrice" class="form-label">Color</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  ng-model="request.mauSac"
+                  name="mauSac"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="productPrice" class="form-label"
+                  >Manufacturer</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  ng-model="request.nhaSanXuat"
+                  name="nhaSanXuat"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="productPrice" class="form-label">State</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  ng-model="request.trangThai"
+                  name="trangThai"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="productPrice" class="form-label">Image</label>
+                <input type="file" id="fileInput" style="display: none" />
+                 <button ng-click="selectFile()">Chọn File</button>
+                 <span ng-show="selectedFileName">{{ selectedFileName }}</span>
+
+              </div>
+              <button ng-click="updateProduct($event)" class="btn btn-primary">
+                update Product
+              </button>
+              
+            </form>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.container-fluid -->
+
+
+
+<!-- Bootstrap core JavaScript-->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Core plugin JavaScript-->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for all pages-->
+<script src="js/sb-admin-2.min.js"></script>
+
+<!-- Page level plugins -->
+<script src="vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+<!-- Page level custom scripts -->
+<script src="js/demo/datatables-demo.js"></script>

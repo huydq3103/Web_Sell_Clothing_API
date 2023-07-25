@@ -1,0 +1,103 @@
+     <!-- Begin Page Content -->
+     <div class="container-fluid">
+        <!-- Page Heading -->
+        <h1 class="h3 mb-2 text-gray-800">Products</h1>
+        <!-- <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
+            For more information about DataTables, please visit the <a target="_blank"
+                href="https://datatables.net">official DataTables documentation</a>.</p> -->
+
+        <!-- DataTales Example -->
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary"></h6>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered"  width="100%" cellspacing="0">
+                        <!-- id="dataTable" -->
+                        <div style="float: right;margin-bottom: 10px;">
+                            Search : <input type="text">
+                        </div>
+                        
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Position</th>
+                                <th>Office</th>
+                                <th>Age</th>
+                                <th>Start date</th>
+                                <th>Salary</th>
+                                <th>Position</th>
+                                <th>Office</th>
+                                <th>Age</th>
+                                <th>Start date</th>
+                                <th>Start date</th>
+                                <th>Start date</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr ng-repeat="item in listProducts">
+                                <th>{{item.maSanPham}}</th>
+                                <th>{{item.tenSanPham}}</th>
+                                <th>{{item.chatLieu}}</th>
+                                <th>{{item.giaHienHanh}}</th>
+                                <th>{{item.soLuongTon}}</th>
+                                <th>{{item.moTa}}</th>
+                                <th>{{item.loaiSanPham}}</th>
+                                <th>{{item.mauSac}}</th>
+                                <th>{{item.nhaSanXuat}}</th>
+                                <th>{{item.trangThai}}</th> 
+                                <th>{{item.hinhAnh}}</th>
+                                <th><a type="button" class="success" href="#/form">Add</a></th>
+                                <th>
+                                    <a type="button" class="btn btn-danger" ng-click="removeProduct($event,$index)"  >Remove</a>
+                                    <a type="button" class="btn btn-success" ng-click="details($index)">Edit</a>
+
+                                </th>                              
+                            </tr>
+                        </tfoot>
+                       <tbody>
+                       
+                       </tbody>
+                      
+                    </table>
+                    <nav aria-label="Page navigation example" >
+                        <ul class="pagination justify-content-end">
+                          <li class="page-item disabled">
+                            <a class="page-link">Previous</a>
+                          </li>
+                          <li class="page-item"><a class="page-link"  ng-click="PageNo(0);">1</a></li>
+                          <li class="page-item"><a class="page-link"  ng-click="PageNo(1);">2</a></li>
+                          <li class="page-item"><a class="page-link"  ng-click="PageNo(2);">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                            
+                          </li>
+                        </ul>
+                      </nav>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- /.container-fluid -->
+ 
+
+   
+ <!-- Bootstrap core JavaScript-->
+ <script src="vendor/jquery/jquery.min.js"></script>
+ <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+ <!-- Core plugin JavaScript-->
+ <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+ <!-- Custom scripts for all pages-->
+ <script src="js/sb-admin-2.min.js"></script>
+
+ <!-- Page level plugins -->
+ <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+ <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+ <!-- Page level custom scripts -->
+ <script src="js/demo/datatables-demo.js"></script>
+   
